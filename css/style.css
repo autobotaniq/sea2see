@@ -25,3 +25,18 @@
 	border: 1px solid red;
 	min-height: 500px;
 }
+.gallery {
+	display: flex;
+	justify-content: space-between;
+}
+.photos-nav-block {
+	width: 20%;
+}
+.photos-block {
+	width: 70%;
+}
+.photos-block img{
+	width: 100%;
+}
+
+

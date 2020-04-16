@@ -60,32 +60,36 @@
                 <div class="row">
                     <div class="left-column">
                         <div class="gallery">
-                            <div class="photos-nav">
-                                <div class="image">
-                                    <img src="img/products/smart_1.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="img/products/smart_1.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="img/products/smart_1.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="img/products/smart_1.jpg" alt="">
+                            <div class="photos-nav-block">
+                                <div class="photos-nav">
+                                    <div class="image">
+                                        <img src="img/products/smart_1.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/products/smart_2.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/products/smart_1.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/products/smart_2.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="photos">
-                                <div class="image">
-                                    <img src="img/products/smart_1.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="img/products/smart_1.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="img/products/smart_1.jpg" alt="">
-                                </div>
-                                <div class="image">
-                                    <img src="img/products/smart_1.jpg" alt="">
+                            <div class="photos-block">
+                                <div class="photos">
+                                    <div class="image">
+                                        <img src="img/products/smart_1.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/products/smart_2.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/products/smart_1.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/products/smart_2.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -403,6 +407,7 @@
               asNavFor: '.photos-nav'
             });
             $('.photos-nav').slick({
+                vertical: true,
               slidesToShow: 3,
               slidesToScroll: 1,
               asNavFor: '.photos',
