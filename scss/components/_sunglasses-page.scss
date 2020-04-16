@@ -1,0 +1,104 @@
+.sunglasses-product {
+    padding: 100px 0 0 0;
+
+    .sort-list{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 50px 0;
+
+        p{
+            margin: 0;
+            padding: 10px 5px 0 0;
+        }
+        select {
+            padding: 10px 60px 10px 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            background: url('../img/icons/sort-up-and-down-arrows-couple.png') no-repeat right 5px center;
+            outline: 0;
+            background-size: 13px;
+            
+        }
+        
+    }
+
+    .product {
+        text-align: center;
+
+        &__name {
+            margin-top: -40px;
+            font-size: 16px;
+            line-height: 1.4;
+            font-weight: 700;
+            color: #080808;
+        }
+
+        &__price {
+            margin-top: -14px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #222;
+        }
+
+        &__thumbnails {
+            width: 75%;
+            margin: 0 auto;
+
+            a {
+                outline: none;
+            }
+
+            .slick-list {
+                margin: 0 auto;
+                max-width: 55%;
+            }
+
+            .slick-arrow {
+                position: absolute;
+                display: block;
+                height: 30px;
+                width: 50px;
+                line-height: 0;
+                font-size: 0;
+                cursor: pointer;
+                background: transparent;
+                color: transparent;
+                top: 50%;
+                transform: translate(0, -50%);
+                padding: 0;
+                border: none;
+                outline: none;
+
+                &:before {
+                    font-size: 30px;
+                    color: gray;
+                    opacity: 0.75;
+                }
+            }
+
+            .slick-prev {
+                left: 0;
+
+                &:before {
+                    content: "\02039";
+                }
+            }
+
+            .slick-next {
+                right: 0;
+
+                &:before {
+                    content: "\0203A";
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,63 @@
+.promo{
+    img{
+        margin: 0 auto;
+    }
+}
+.waste{
+    .item{
+        h1{
+            margin: 3rem 0 4rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        h3{
+            margin: 2rem 0 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    
+    }
+    .ghana{
+        .ghana-map{
+            text-align:center;
+            p{
+                text-align: left;
+                margin-top: 30px;
+            }
+        }
+    }
+    .mountains-waste{
+
+        &__img{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: auto;
+            img{
+                margin: 0 auto;
+                margin-top: 35px;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .ghana{
+            .ghana-map{
+                p{
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+            .glasses{
+                text-align: center;
+            }
+        }
+    }
+    
+}
+

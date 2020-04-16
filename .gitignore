@@ -23,6 +23,6 @@ app/local.php
 *.vi
 *~
 *.sass-cache
-scss/
+# scss/
 
 

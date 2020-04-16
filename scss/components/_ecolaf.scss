@@ -1,0 +1,45 @@
+.ecolaf-promo{
+    padding: 90px 0 0 0;
+    img{
+        margin: 0 auto;
+    }
+}
+.ecolaf{
+    h4{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .item{
+        img{
+            min-width: 100%;
+            margin-top: 40px;
+        }
+        h5{
+            background-color: #18154a;
+            color: white;
+            padding: 15px 10px 15px 10px;
+            text-transform: uppercase;
+            margin-top: 70px;
+            margin-bottom: 10px;
+        }
+        p{
+            background-color: #18154a;
+            color: white;
+            padding: 25px 10px 25px 10px;
+        }
+    }
+    .ecolaf-contact{
+        margin-top: 90px;
+        h4, p{
+            text-align: center;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    @media screen and (max-width: 991px) {
+       h4, h5, p{
+           text-align: center;
+       }
+    }
+}

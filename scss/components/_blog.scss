@@ -1,0 +1,22 @@
+.blog-section {
+    padding-top: 180px;
+
+    .blog{
+        padding: 0 5px 0 5px;
+        margin: 30px 0 0 0;
+        img{
+            min-width: 100%;
+        }
+        &__title{
+            margin: 20px 0 20px 0;
+            line-height: 1.4;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #080808;
+        }
+
+    }
+    @media screen and (max-width: 991px) {
+        padding-top: 90px;
+    }
+}

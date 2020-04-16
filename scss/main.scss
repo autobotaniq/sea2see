@@ -1,0 +1,57 @@
+@import "../../node_modules/normalize.css/normalize";
+
+@import "components/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "libs/slick";
+
+@import "components/general";
+@import "components/fonts";
+@import "components/header";
+@import "components/front-page";
+@import "components/sunglasses-page";
+@import "components/blog";
+@import "components/instagram";
+@import "components/partners";
+@import "components/story";
+@import "components/philosophy";
+@import "components/waste";
+@import "components/certification";
+@import "components/footer";
+@import "components/ecolaf";
+@import "components/popup";
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+.heading{
+    position: relative;
+    margin: 20px 0 30px;
+    padding-bottom: 0;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.heading-with-marker {
+    position: relative;
+    margin: 20px 0 50px;
+    padding-bottom: 0;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 70px;
+        height: 4px;
+        bottom: -19px;
+        left: calc(50% - 35px);
+        background: #000;
+    }
+}
