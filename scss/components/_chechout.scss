@@ -288,6 +288,10 @@ body{
               position: absolute;
               top: 20%;
               z-index: 1;
+<<<<<<< HEAD
+=======
+              padding: 1px;
+>>>>>>> 6191b4061f19d8ca37e43db961e52a75abe3a7ed
 
             }
           }
@@ -385,6 +389,12 @@ body{
         padding-top: 20px;
       }
     }
+<<<<<<< HEAD
+=======
+    .shipping__form .input-checkbox input[type='checkbox']+label{
+      font-size: 16px;
+    }
+>>>>>>> 6191b4061f19d8ca37e43db961e52a75abe3a7ed
     
   }
 
