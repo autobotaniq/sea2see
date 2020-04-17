@@ -59,9 +59,15 @@
             <div class="container">
                 <div class="row">
                     <div class="left-column">
-                        <div class="gallery">
+                       
                             <div class="photos-nav-block">
                                 <div class="photos-nav">
+                                    <div class="image">
+                                        <img src="img/products/smart_1.jpg" alt="">
+                                    </div>
+                                    <div class="image">
+                                        <img src="img/products/smart_2.jpg" alt="">
+                                    </div>
                                     <div class="image">
                                         <img src="img/products/smart_1.jpg" alt="">
                                     </div>
@@ -92,9 +98,69 @@
                                     </div>
                                 </div>
                             </div>
+                       
+
+                        <div class="variables">
+                            <img src="img/products/smart_thumb_1.jpg" alt="" class="active">
+                            <img src="img/products/smart_thumb_2.jpg" alt="" class="unvaluable">
+                            <img src="img/products/smart_thumb_3.jpg" alt="">
+                            <img src="img/products/smart_thumb_4.jpg" alt="">
+                            <img src="img/products/smart_thumb_5.jpg" alt="">
                         </div>
                     </div>
-                    <div class="right-column"></div>
+                    <div class="right-column">
+                        <h1>Surf</h1>
+                        <h2>Surf 02 Polarized</h2>
+                        <span class="price">$100.00</span>
+                        <p class="variant-name">FRAME: Havana Shiny <br> LENSE: G15 Classic green</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="#reviews">Reviews</a>
+                        </div>
+                        <button type="submit" name="add" id="AddToCart" class="btn">
+                            <span id="AddToCartText">Add to Cart</span>
+                        </button>
+                        <div class="info-product">
+                            <span><strong>Lenses:</strong></span>
+                            <ul>
+                                <li>UV 400 Cat 3 - 100% Ultraviolet protection.</li>
+                                <li>Italian Polycarbonate.</li>
+                            </ul>
+                            <span><strong>Frame:</strong></span>
+                            <ul>
+                                <li>Made with 100% recovered marine plastic.</li>
+                                <li>100% Hand made in Italy.</li>
+                                <li>Light and ultra resistant: 24 gr.</li>
+                            </ul>
+                            <span><strong>Size:</strong></span>
+                            <ul>
+                                <li>52 / 19 / 145</li>
+                                <li>One size unisex design.</li>
+                                <li>EC guarantee.</li>
+                            </ul>
+                        </div>
+                        <div class="share">
+                            <span>Share and get 10% DISCOUNT</span>
+                            <a href="" class="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                Share
+                            </a>
+                            <a href="" class="twitter">
+                                <i class="fab fa-twitter"></i>
+                                Tweet
+                            </a>
+                            <a href="" class="envelope">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -407,14 +473,21 @@
               asNavFor: '.photos-nav'
             });
             $('.photos-nav').slick({
-                vertical: true,
-              slidesToShow: 3,
+              vertical: true,
+              slidesToShow: 5,
               slidesToScroll: 1,
               asNavFor: '.photos',
+              arrows: false,
               dots: false,
               centerMode: false,
               focusOnSelect: true
             });
+            $('.variables').slick({
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              arrows: true,
+            });
+
         });
     </script>
     <script src="js/script.js"></script>

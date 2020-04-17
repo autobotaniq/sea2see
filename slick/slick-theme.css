@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -88,7 +88,7 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: "\02039";
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +106,7 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: "\0203A";
 }
 [dir='rtl'] .slick-next:before
 {
