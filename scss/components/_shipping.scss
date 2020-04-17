@@ -1,0 +1,103 @@
+.shipping-page{
+    .contact-detales{
+        // .context{
+        //     font-size: 18px;
+        // }
+        .contact, .ship-to{
+            color: #737373;
+            padding-right: 20px;
+        }
+        .change{
+            padding-left: 20px;
+        }
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+            li{
+                list-style-type: none;
+            }
+        }
+        padding: 14px 10px 0px 10px;;
+        font-size: 18px;
+        margin: 5px 0;
+        border-radius: 2px;
+        outline: none;
+        border: none;
+        border: solid 1px #cdd0d4;
+        border-radius: 5px;
+        background-color: white;
+
+    }
+    .shipping__form{
+
+        .label{
+            margin-top: 20px
+        }
+    }
+    .shipping-method{
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 10px 7px 10px;
+        font-size: 18px;
+        margin: 5px 0;
+        border-radius: 2px;
+        outline: none;
+        border: none;
+        border: solid 1px #cdd0d4;
+        border-radius: 5px;
+        background-color: white;
+        margin-bottom: 20px;
+
+        
+
+        span{
+            padding-top: 5px;
+            padding-right: 10px;
+        }
+        .input-checkbox-radio{
+            label{
+                text-transform: uppercase;
+               
+            }
+        }
+    }
+    .vertborder{
+        height: 460px;
+    }
+    @media screen and (max-width: 1199px) {
+
+        .contact-detales{
+            ul{
+                li{
+                    font-size: 16px;
+                }
+            }  
+        }
+        
+    }
+    @media screen and (max-width: 991px) {
+
+        .contact-detales{
+            ul{
+                li{
+                    font-size: 18px;
+                }
+            }  
+        }
+        
+    }
+    @media screen and (max-width: 767px) {
+
+        .contact-detales{
+            .change{
+                padding-left: 0;
+            }
+            ul{
+                flex-direction: column;
+            }
+        }
+        
+    }
+}
