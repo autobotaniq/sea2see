@@ -210,6 +210,7 @@ body {
 }
 .page-breadcrumb {
 	margin-top: 115px;
+	margin-bottom: 15px;
 }
 .page-breadcrumb a {
 	opacity: 1;
