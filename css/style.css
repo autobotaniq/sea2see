@@ -410,3 +410,64 @@ body {
 .home-customer-favorites .heading-with-marker:after {
 	display: none;
 }
+
+
+/*CART*/
+.cart-page {
+	margin-top: 100px;
+	min-height: 500px;
+	border: 1px solid red;
+}
+.cart-title h2 {
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 3px;
+	font-size: 22px;
+	text-align: center;
+}
+.cart {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+}
+.cart .good {
+	grid-row: 2;
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.cart .good .info {
+	grid-column: 2/4;
+}
+.cart .logos {
+	grid-row: 3;
+	grid-column: 4/7;
+}
+.cart .donation {
+	grid-row: 4;
+	grid-column: 3/7;
+}
+.cart .result {
+	grid-row: 5;
+	grid-column: 5/7;
+}
+.cart .titles {
+	display: grid;
+	grid-column: 1/7;
+	grid-template-columns: repeat(6,1fr);
+}
+.cart .titles .price {
+	grid-column: 4;
+}
+.cart .titles .quantity {
+	grid-column: 5;
+}
+.cart .titles .total {
+	grid-column: 6;
+}
+
+
+
+
+
+
