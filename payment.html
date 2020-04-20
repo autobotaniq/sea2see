@@ -68,7 +68,7 @@
         </div>
 
 
-        <section class="order-pages shipping-page">
+        <section class="order-pages payment-page">
 
             <div class="container">
 
@@ -106,8 +106,6 @@
 
                                         </div>
 
-                                        
-
                                         <hr>
 
                                         <div class="about-information">
@@ -121,32 +119,101 @@
 
                                         </div>
 
+                                        <hr>
+
+                                        <div class="about-information">
+
+                                            <ul >
+                                                <li class="method">Method</li>
+                                                <li class="context-shipping">Free Shipping</li>
+                                                <li class="free">Free</li>
+                                            </ul>
+
+
+                                        </div>
+
                                         
 
                                     </div>
     
                                     <form class="shipping__form" action="#" method="post">
 
-                                        <label class="label">Shipping method</label>
+                                        <label class="label">Paymanet</label>
+                                        <span>All transactions are secure and encrypted.</span>
 
-                                        <div class="shipping-method">
+                                        <div class="payment-variation payment-variation__top">
 
-                                            <div class="input-checkbox-radio">
+                                            <div class="input-checkbox-radio credit-card">
 
-                                                <input id="free" name="radio" type="radio">
+                                                <input id="credit-card" name="radio-pay" type="radio">
     
-                                                <label for="free" >Free shipping</label>
+                                                <label for="credit-card" >Credit card</label>
     
                                             </div>
 
-                                            <span>Free</span>
+                                        </div>
+
+                                        <div class="card-information">
+
+                                            <input class="cart-number" name="cart-number" required placeholder="Cart number" type="text">
+
+                                            <input name="name-card" required placeholder="Name on card" type="text">
+
+                                            <div class="row-2">
+
+                                                <input  name="expiration-date" required placeholder="Expiration date (MM / YY)" type="text">
+                
+                                                <input class="security-code" name="security-code" required placeholder="Security code" type="password">
+
+                                            </div>
 
                                         </div>
 
-                                        
-                                        <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4 offset-sm-4 offset-md-6 offset-lg-7 offset-xl-8 pr-0 pl-0">
+                                        <div class="payment-variation payment-variation__bottom">
 
-                                            <button type="submit">Continue to payment</button>
+                                            <div class="input-checkbox-radio pay-pal">
+
+                                                <input id="pay-pal" name="radio-pay" type="radio">
+    
+                                                <label class="pay-pal" for="pay-pal" ></label>
+    
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <label class="label">Billing address</label>
+                                        <span>Select the address that matches your card or payment method.</span>
+
+                                        <div class="billing-address pl-0 pr-0">
+
+                                            <div class="input-checkbox-radio">
+
+                                                <input id="address" name="radio-address" type="radio">
+    
+                                                <label for="address" >Same as shipping address</label>
+    
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="input-checkbox-radio">
+
+                                                <input id="different" name="radio-address" type="radio">
+    
+                                                <label for="different" >Use a different billing address</label>
+    
+                                            </div>
+
+                                        </div>
+
+                                
+
+                                        
+                                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-2 offset-sm-9 offset-md-9 offset-lg-9 offset-xl-10 pr-0 pl-0">
+
+                                            <button type="submit">Pay now</button>
 
                                         </div>
                                         
@@ -163,6 +230,22 @@
                                 </div>
 
                                 
+
+                            </div>
+
+                            <div class="col-lg-12 col-xl-12 ">
+
+                                <div class="chechout-bottom">
+
+                                    <hr>
+                                    <a href="#">Refund policy</a>
+
+                                    <a href="#">Privacy policy</a>
+
+                                    <a href="#">Terms of service</a>
+
+                                </div>
+                               
 
                             </div>
 
