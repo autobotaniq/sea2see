@@ -705,3 +705,30 @@ body {
 .instagram-feed-cart {
 	padding-bottom: 45px
 }
+
+
+
+
+.press {
+	min-height: 700px;
+	margin-top: 150px;
+}
+.press .container h2 {
+	text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
