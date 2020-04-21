@@ -63,28 +63,51 @@
                 <div class="row">
                     <div class="cart">
                         <div class="titles">
+
                             <div class="price">Price</div>
                             <div class="quantity">Quantity</div>
                             <div class="total">Total</div>
                         </div>
-                        <div class="good">
-                            <img src="https://cdn.shopify.com/s/files/1/1238/0884/products/1_169d9446-19ec-4fc7-8079-2b7e7fdbfd12_1024x1024.jpg?v=1571137247" alt="" class="image">
-                            <div class="info">
-                                <ul>
-                                    <li class="brand">SMART</li>
-                                    <li class="model">SMART-758</li>
-                                    <li class="frame"><span>FRAME: BROWN BLUE</span><span>LENSE: BROWN FUME</span></li>
-                                    <li class="remove"><a href="#">Remove</a></li>
-                                </ul>
+                        <div class="goods">
+                            <div class="good">
+                                <img src="https://cdn.shopify.com/s/files/1/1238/0884/products/1_169d9446-19ec-4fc7-8079-2b7e7fdbfd12_1024x1024.jpg?v=1571137247" alt="" class="image">
+                                <div class="info">
+                                    <ul>
+                                        <li class="brand">SMART</li>
+                                        <li class="model">SMART-758</li>
+                                        <li class="frame"><span>FRAME: BROWN BLUE</span><span>LENSE: BROWN FUME</span></li>
+                                        <li class="remove"><a href="#">Remove</a></li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span>$155.00</span>
+                                </div>
+                                <div class="quantity">
+                                    <input type="number" size="15" name="num" min="1" max="9999999999999" value="1">
+                                </div>
+                                <div class="total">
+                                    <span>$155.00</span>
+                                </div>
                             </div>
-                            <div class="price">
-                                <span>$155.00</span>
-                            </div>
-                            <div class="quantity">
-                                <input type="number" size="15" name="num" min="1" max="9999999999999" value="1">
-                            </div>
-                            <div class="total">
-                                <span>$155.00</span>
+                            <div class="good">
+                                <img src="https://cdn.shopify.com/s/files/1/1238/0884/products/1_169d9446-19ec-4fc7-8079-2b7e7fdbfd12_1024x1024.jpg?v=1571137247" alt="" class="image">
+                                <div class="info">
+                                    <ul>
+                                        <li class="brand">SMART</li>
+                                        <li class="model">SMART-758</li>
+                                        <li class="frame"><span>FRAME: BROWN BLUE</span><span>LENSE: BROWN FUME</span></li>
+                                        <li class="remove"><a href="#">Remove</a></li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span>$155.00</span>
+                                </div>
+                                <div class="quantity">
+                                    <input type="number" size="15" name="num" min="1" max="9999999999999" value="1">
+                                </div>
+                                <div class="total">
+                                    <span>$155.00</span>
+                                </div>
                             </div>
                         </div>
                         <div class="logos">
@@ -92,21 +115,21 @@
                             <img src="img/cart/ocean-logo.png" alt="ocean-logo">
                         </div>
                         <div class="donation">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                            <span>1€ = 10kg.! Donate to Ambiente Europeo to clean 10rk. of beach plastic waste.</span>
                             <form action="#">
-                                <input type="text">
-                                <input type="submit">
+                                <input type="number" placeholder="€ (EUR)">
+                                <input type="submit" value="OK">
                             </form>
                         </div>
                         <div class="result">
                             <ul>
-                                <li class="your-donation">Your donation: $115.00</li>
-                                <li class="subtotal">Subtotal: $115.00</li>
-                                <li><a href="#">Shiping, taxes</a></li>
+                                <li class="your-donation">Your donation: <span class="sum">$115.00</span></li>
+                                <li class="subtotal">Subtotal: <span class="sum">$115.00</span></li>
+                                <li class="shiping">Shiping, taxes, and discounts will be callculated at checkout</li>
                             </ul>
                             <div class="accept">
-                                <button>Update</button>
-                                <button>Check Out</button>
+                                <button class="update">Update Cart</button>
+                                <button class="checkout">Check Out</button>
                             </div>
                         </div>
                     </div>
