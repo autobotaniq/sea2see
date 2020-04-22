@@ -958,7 +958,7 @@ body {
     color: #fff;
     cursor: pointer;
     font: bold 14px/1.4 Arial, Helvetica, sans-serif;
-    padding: 6px 12px;
+    padding: 10px 12px;
     white-space: nowrap;
     -webkit-border-radius: 4px;
     margin-top: 20px;
@@ -1033,5 +1033,8 @@ body {
 		width: 100%;
 		flex: none;
 		margin-bottom: 15px;
+	}
+	#shopmap-search {
+		width: 100%;
 	}
 }
