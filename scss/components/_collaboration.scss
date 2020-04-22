@@ -1,0 +1,206 @@
+.promo-collaboration{
+    padding-top: 90px;
+    .item{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        h1{
+            margin: 2% 0 2.5rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 4px;
+            font-size: 2.5vw;
+        }
+        h2{
+            margin: 2rem 0 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+            font-size: 1.5vw;
+        }
+    
+    }
+    img{
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 1199px) {
+       
+            .item{
+                h1{
+                    margin: 4% 0 0.5rem 0;
+                    font-size: 3.5vw;
+                }
+                h2{
+                    font-size: 2.5vw;
+                }
+
+            }
+            
+        }
+    
+}
+
+.collaboration{
+    .projects{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        img{
+            margin: 0 auto;
+        }
+        .one-project{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 50px;
+            span{
+                padding: 10px 0 15px 0;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 14px;
+                color: black;
+            }
+        }
+    }
+   
+    
+}
+
+.overlay-collaboration {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, .6);
+    z-index: 1000;
+    
+}
+.popup-collaboration{
+    display: none;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: auto;
+    width: 70%;
+
+    &__close {
+        position: absolute;
+        top: -80px;
+        right: 50%;
+        transform: translate(50%, 0);
+        font-size: 41px;
+        line-height: 38px;
+        color: white;
+        cursor: pointer;
+        border: solid;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        padding-left: 12px;
+    }
+        .description-img{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: auto;
+            padding: 40px 30px 60px 60px;
+            img{
+                margin: 0 auto;
+                margin-left: 5px;
+                max-width: 100%;
+            }
+        }
+        .description-content{
+            padding: 40px 60px 0 0;
+            .social{
+                text-align: right;
+                color: #a9aeae;
+                padding-top: 10px;
+
+            }
+        }
+        .heading-with-red-marker {
+            position: relative;
+            margin: 30px 0 15px;
+            padding-bottom: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: solid 2px;
+            border-color: #8b0000;
+            width: 268px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 10px;
+        }
+        .logo{
+            text-align: center;
+        }
+        .social{
+            margin-bottom: 20px;
+        }
+    
+    @media screen and (max-width: 1457px) {
+        width: 80%;
+}
+
+    @media screen and (max-width: 1199px) {
+            width: 90%;
+        .description-img{
+            
+        }
+        
+    }
+    @media screen and (max-width: 991px) {
+      
+        .description-img{
+            img{
+                margin: 0 auto;
+            }
+        }
+        .description-content {
+            padding: 40px 60px 40px 60px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        padding-top: 25px;
+      
+        .description-img{
+            padding: 10px 10px 10px 10px;
+            img{
+               width: 45%;
+            } 
+        }
+        .description-content{
+            padding: 10px 10px 0 10px;
+            .text{
+                overflow: scroll;
+                height: 210px;
+                margin-bottom: 0;
+            }
+            .social{
+                padding-top: 5px;
+                margin-bottom: 55px;
+            }
+        }
+        &__close {
+            top: 20px;
+            color: gray;
+        }
+        .heading-with-red-marker{
+            margin-top: 50px;
+        }
+    }
+    
+}

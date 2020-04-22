@@ -1,0 +1,27 @@
+.about-us{
+    text-align: center;
+    h1{
+        padding-top: 90px;
+        margin: 20px 0 45px 0;
+        line-height: 1.4;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #080808;
+        font-size: 32px;
+    }
+
+    img{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 575px) {
+        p{
+            text-align: center;
+        }
+    }
+
+}
