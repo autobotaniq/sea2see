@@ -171,15 +171,23 @@
         }
     }
     @media screen and (max-width: 575px) {
+        padding-top: 25px;
       
         .description-img{
+            padding: 10px 10px 10px 10px;
             img{
                width: 45%;
-            }
+            } 
+        }
+        .description-content{
+            padding: 10px 10px 0 10px;
         }
         &__close {
-            top: -65px;
-            
+            top: 20px;
+            color: gray;
+        }
+        .heading-with-red-marker{
+            margin-top: 50px;
         }
     }
     
