@@ -14,13 +14,25 @@
         margin: 0 auto;
         margin-bottom: 20px;
     }
-    p{
-        text-align: left;
-        font-size: 1.2rem;
-    }
-    @media screen and (max-width: 575px) {
+    .about-us-description{
+
+        padding: 0 10px 0 10px;
+
         p{
-            text-align: center;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+
+    }
+    
+    @media screen and (max-width: 575px) {
+        .about-us-description{
+
+            p{
+                text-align: center;
+              
+            }
+    
         }
     }
 
