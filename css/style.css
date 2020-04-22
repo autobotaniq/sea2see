@@ -716,21 +716,22 @@ body {
 .press .container h2 {
 	text-align: center;
     text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 900;
+    font-size: 22px;
+    font-weight: 500;
     letter-spacing: 2.5px;
 }
 .press .media-group h1 {
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: 900;
-	font-size: 32px;
+	font-size: 26px;
 	width: 100%;
 	margin-bottom: 20px;
 	color: #000;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 .press .media-group {
-	margin-top: 50px;
+	margin-top: 60px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -740,7 +741,6 @@ body {
 	flex-wrap: wrap;
 	flex: 2;
     min-width: 425px;
-    margin-top: 25px;
     margin: 25px 20px;
     justify-content: space-between;
     align-items: center;
@@ -767,12 +767,16 @@ body {
 	display: none;
 }
 .press .load-more-button {
+    width: fit-content;
+    margin: 44px auto;
+}
+.press #loadMore {
 	text-align: center;
     text-transform: uppercase;
     font-size: 18px;
     color: #222;
     border: 1px solid #ccc;
-    padding: 15px;
+    padding: 15px 55px;
     border-radius: 3px;
     background: #f7f7f7;
     width: 100%;
@@ -780,24 +784,23 @@ body {
     margin: 30px auto 0;
     transition: .3s;
 }
-.press .load-more-button a:hover {
+.press #loadMore :hover {
 	opacity: .7;
 }
-.press .load-more-button .noContent:hover {
+.press .noContent:hover {
 	opacity: 1;
 }
-.press .load-more-button a {
+.press #loadMore  {
 	color: #222;
 	transition: .3s;
 }
 @media screen and (max-width: 548px){
 	.press .media-group .media {
 		min-width: 305px;
-	    margin-top: 25px;
-	    margin: 25px 0px;
 	    justify-content: center;
 	    border-bottom: 1px solid #d4d4d4;
 	    padding-bottom: 35px;
+	    margin: 25px 0 0;
 	}
 	.press .media-group .media .info {
 		width: 70%;
