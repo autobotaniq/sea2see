@@ -916,3 +916,122 @@ body {
 	    font-size: 30px;
 	}
 }
+
+
+.find-our-stores {
+	margin-top: 100px;
+	min-height: 500px;
+}
+.find-our-stores .title h1 {
+	font-size: 30px;
+	color: #797874;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.find-our-stores form {
+	border: 1px solid #ccc;
+    padding: 20px;
+}
+.shopmap-address-wrap {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+.find-our-stores input, .find-our-stores select {
+	width: 100%;
+    padding-left: 10px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    background: transparent;
+}
+.find-our-stores .form-input {
+	margin-bottom: 10px;
+}
+.shopmap-address-wrap input {
+	flex: 4;
+    margin-right: 15px;
+}
+.find-our-stores button {
+	background-color: #6c78eb !important;
+	border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font: bold 14px/1.4 Arial, Helvetica, sans-serif;
+    padding: 6px 12px;
+    white-space: nowrap;
+    -webkit-border-radius: 4px;
+    margin-top: 20px;
+}
+#shopmap-search {
+	padding: 10px 100px;
+	margin-bottom: 5px;
+}
+.shopmap-address-wrap button {
+	flex: 1;
+	margin-top: 0;
+}
+.find-our-stores .search-results {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 35px auto;
+}
+.find-our-stores .shops-location {
+	flex: 1;
+	overflow: auto;
+	margin-right: 15px;
+	border: 1px solid #ccc;
+    font-size: 13px;
+    height: 530px;
+}
+.find-our-stores .map {
+	height: 530px;
+	flex: 3;
+	border: 1px solid #ccc;
+}
+.find-our-stores .shops-location li {
+	list-style: none; 
+	padding: 5px 10px;
+}
+.find-our-stores .shops-location li:nth-child(2n) {
+	background: #ececec;
+}
+.find-our-stores .shops-location ul {
+	padding: 0; 
+}
+.find-our-stores .shop-adress {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.find-our-stores .shop-adress span {
+	width: 100%;
+    color: #a0a0a0;
+}
+.find-our-stores .shop-adress .named {
+	font-weight: bold;
+	font-size: 15px;
+	color: #000;
+}
+.search-parameters {
+	margin-top: 30px;
+}
+
+
+
+
+@media screen and (max-width: 480px){
+	.shopmap-address-wrap input {
+		flex: none;
+		width: 100%;
+		margin-right: 0;
+	}
+	.shopmap-address-wrap button {
+		margin-top: 10px;
+	}
+	.find-our-stores .shops-location, .find-our-stores .map {
+		width: 100%;
+		flex: none;
+		margin-bottom: 15px;
+	}
+}
