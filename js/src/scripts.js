@@ -10,6 +10,15 @@ jQuery(document).ready(function() {
 
   blog_thumbnails_slider.init();
 
+  // modal collaboration
+  $('[data-modal=projects-description]').on('click', function() {
+    $('.overlay-collaboration, .popup-collaboration').fadeIn();
+  });
+
+  $('.popup-collaboration__close').on('click', function() {
+    $('.overlay-collaboration, .popup-collaboration').fadeOut();
+  });
+
 });
 
 
