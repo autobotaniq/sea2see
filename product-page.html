@@ -63,8 +63,7 @@
         <div class="single-product">
             <div class="container">
                 <div class="row">
-                    <div class="left-column">
-                       
+                    <div class="left-column">                  
                             <div class="photos-nav-block">
                                 <div class="photos-nav">
                                     <div class="image-nav">
@@ -384,7 +383,7 @@
     
     
     
-        <div class="home-customer-favorites">
+        <div class="home-customer-favorites product-customer-favorites">
     
             <div class="container">
     
@@ -590,7 +589,7 @@
                                 <div>
                                     <img src="https://cdn.shopify.com/s/files/1/1238/0884/products/21.1_1024x1024_da97a02f-953d-4475-aaae-ee6144f2aa0b_1024x1024.jpg?v=1571137247" alt="">
                                 </div>
-                                   <div>
+                                <div>
                                     <img src="https://cdn.shopify.com/s/files/1/1238/0884/products/11_c5abfaf5-d6c2-48fb-882f-48ee0592de4a_1024x1024.jpg?v=1571137247" alt="">
                                 </div>
                                    <div>
@@ -822,69 +821,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/jquery.zoom.js"></script>
-    <script>
-        $('.image').zoom(); // add zoom
-    </script>
-    <script>
-        $(document).ready(function(){
-           $('.photos').slick({
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: true,
-              fade: true,
-              asNavFor: '.photos-nav'
-            });
-            $('.photos-nav').slick({
-              vertical: true,
-              slidesToShow: 5,
-              slidesToScroll: 1,
-              asNavFor: '.photos',
-              arrows: false,
-              dots: false,
-              centerMode: false,
-              focusOnSelect: true
-            });
-            $('.variables').slick({
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: true,
-              focusOnSelect: true,
-              centerMode: true
-            });
-        });
-    </script>
-    <script>
-        var sliders = {
-          1: {slider : '#slider_1', nav: '#slider_nav_1'},
-          2: {slider : '#slider_2', nav: '#slider_nav_2'},
-          3: {slider : '#slider_3', nav: '#slider_nav_3'},
-          4: {slider : '#slider_4', nav: '#slider_nav_4'},
-          5: {slider : '#slider_5', nav: '#slider_nav_5'},
-          6: {slider : '#slider_6', nav: '#slider_nav_6'}
-        };
-
-        $.each(sliders, function() {
-
-          $(this.slider).slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true, 
-            centerMode: true,
-            asNavFor: this.nav
-          });
-          $(this.nav).slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: this.slider,
-            arrows: true,
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true
-          });
-
-        });
-    </script>
     <script src="js/script.js"></script>
     
     
