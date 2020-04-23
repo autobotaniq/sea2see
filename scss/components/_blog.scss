@@ -9,9 +9,11 @@
 .blog-page{
     .blog-section {
         padding-top: 50px;
-    
+        .heading{
+            font-size: 28px;
+        }
         .blog{
-            padding: 0 5px 0 5px;
+            padding: 0 15px 0 15px;
             margin: 50px 0 0 0;
             img{
                 min-width: 100%;
@@ -34,6 +36,10 @@
                     font-size: 18px;
                 }
                 .blog-text{
+                    height: 150px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
                     &__excerpt{
                         margin-bottom: 2rem;
                     }
@@ -41,6 +47,7 @@
                         color: black;
                         border-bottom: 1px solid;
                         padding-bottom: 3px;
+                        width: 75px;
                     }
                     &__link:hover{
                         color: #007bff;
