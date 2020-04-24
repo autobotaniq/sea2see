@@ -436,19 +436,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/jquery.zoom.js"></script>
-    <script>
-       $(document).ready(function(){
-          $(".load-more-press").slice(0, 4).css('display', 'flex');
-          $("#loadMore").on("click", function(e){
-            e.preventDefault();
-            $(".load-more-press:hidden").slice(0, 4).slideDown().css('display', 'flex');;
-            if($(".load-more-press:hidden").length == 0) {
-              $("#loadMore").text("No Content").addClass("noContent");
-            }
-          });
-          
-        })
-    </script>
     <script src="js/script.js"></script>
     
     

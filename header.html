@@ -200,60 +200,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    $( "li" ).has( "ul" ).addClass('has-child');
-    $( "li.has-child" ).click(function() {
-        $(".sub-menu", this).slideToggle().css("display","flex");
-    });
-    if(window.matchMedia('(min-width: 992px)').matches){
-        $( "li.has-child" ).click(function() {
-           $(".sub-menu", this).css("display","flex");
-           $(this).toggleClass('active-sub');    
-        });
-        jQuery(function($){
-          $(document).mouseup(function (e){ // событие клика по веб-документу
-            var div = $(".sub-menu",this); // тут указываем ID элемента
-            if (!div.is(e.target) // если клик был не по нашему блоку
-                && div.has(e.target).length === 0) { // и не по его дочерним элементам
-              div.hide(); // скрываем его
-            }
-          });
-        });
-    }
-
-    $( ".hamburger" ).click(function() {
-        $(".head").slideToggle().css("display","block");
-    });
-    /**/
-
-    $().ready(    
-    function() {               
-        var day = 24*60*60*1000;
-        var step = 0.5;
-        var firstDate = new Date($('#startDate').val());  
-        var secondDate = new Date();
-        var startCounter = $('#startCounter').val();
-        var daysPassed = Math.abs((firstDate.getTime() - secondDate.getTime())/(day));
-
-        //alert(Math.abs((secondDate.getTime() - firstDate.getTime())/(day)))
-        $('.counter__result').text((daysPassed * 0.5).toFixed(1));
-    });
-
-
-</script>
 <script src="js/script.js"></script>
 </body>
 </html>
