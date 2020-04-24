@@ -121,4 +121,136 @@
         }
         
     }
+
+
+	.shipping-cart {
+		padding-left: 15px;
+
+		@media (max-width: 991px) {
+			padding-left: 0;
+		}
+
+		&__inner {
+			display: flex;
+			justify-content: space-between;
+
+			@media (max-width: 575px) {
+				flex-direction: column;
+			}
+
+			.cart-icon {
+				&-count {
+					width: 35px;
+					height: 35px;
+					border-radius: 100%;
+					background-color: #808080;
+					text-align: center;
+					position: absolute;
+					z-index: 3;
+					transform: translate(200%, -50%);
+
+					span {
+						color: white;
+						font-size: 20px;
+					}
+
+				}
+
+				&-img {
+					width: 90px;
+					height: 80px;
+					background-color: white;
+					position: relative;
+					border: solid 0.8px #cdd0d4;
+					border-radius: 5px;
+					z-index: 2;
+
+					img {
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						z-index: 1;
+						max-height: 100%;
+					}
+				}
+			}
+
+			.cart-description {
+				padding-left: 20px;
+				padding-right: 15px;
+
+				@media (max-width: 575px) {
+					padding-left: 0;
+					padding-top: 20px;
+					padding-right: 0;
+				}
+
+				span {
+					font-size: 20px;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+
+				p {
+					color: #6a6c6f;
+					font-size: 15px;
+					text-transform: uppercase;
+					line-height: 1.2;
+				}
+			}
+
+			.s2s-total-price {
+				font-size: 20px;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin: auto 0;
+			}
+		}
+
+		.shipping__form {
+			.row-5-1 {
+				display: grid;
+				grid-template-columns: 73% 25%;
+				justify-content: space-between;
+
+			}
+
+			.btn-cart {
+				padding: 10px 0;
+				margin: 5px 0;
+				background-color: #bdc0c5;
+			}
+
+		}
+
+		.subtotal, .cart-shipping, .total {
+			display: flex;
+			justify-content: space-between;
+
+			span {
+				font-size: 18px;
+			}
+		}
+
+		.subtotal {
+
+			.s2s-total-price {
+				font-size: 20px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+
+		.cart-shipping {
+			p {
+				color: #6a6c6f;
+			}
+		}
+
+		.total .s2s-total-price, .s2s-title-total-price {
+			font-weight: bold;
+		}
+
+	}
 }

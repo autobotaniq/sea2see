@@ -69,13 +69,17 @@
             }
           }
           & + label {
-            font-size: 18px;
+            font-size: 16px;
             color: #6c6e78;
             line-height: 21px;
             display: inline-block;
             vertical-align: top;
             cursor: pointer;
             margin-left: 4px;
+
+						@media (min-width: 576px) {
+							font-size: 18px;
+						}
           }
         }
         input[type='checkbox'] {
@@ -124,8 +128,8 @@
         input[type='radio'] {
           border-radius: 50%;
           &:after {
-            width: 19px;
-            height: 19px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             background: var(--active-inner);
             opacity: 0;

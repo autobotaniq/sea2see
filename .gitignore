@@ -24,5 +24,13 @@ app/local.php
 *~
 *.sass-cache
 # scss/
+*.swp
+*.iws
+.idea
+.htaccess
+*.iml
+out
+gen
+node_modules/
 
 

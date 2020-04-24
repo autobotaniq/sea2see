@@ -1,93 +1,116 @@
-.philosophy{
-    padding: 90px 0 0 0;
-    h1{
-        margin: 3.125rem auto 3.125rem auto;
-        line-height: 1.6;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 2.3rem;
-    }
-    
-    
-    h3{
-        margin-top: 1.875rem;
-        margin-left: 1.875rem;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    p{
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin: 1.25rem 2rem 0.875rem 1.875rem;
-    }
-    img{
-        margin: 0 auto;
-    }
-    .responsibility{
-        p{
-            text-align: right;
-        }
-        h3{
-            text-align: right;
-            margin-right: 1.875rem;
-        }
-    }
+.philosophy {
+	padding: 90px 0 0 0;
 
-    .alarming-facts{
-        padding: 70px 0 0 0;
+	h1 {
+		margin: 3.125rem auto 3.125rem auto;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 30px;
 
-        .bg-grey{
-            background-color: #f2f2f2;
-            h2{
-                margin: 3rem auto 3rem auto;
-                line-height: 1.6;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                
-            }
-        }
+		@media (min-width: 768px) {
+			line-height: 1.5;
+			font-size: 2.3rem;
+		}
+	}
 
-        &__img{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: auto;
-    
-            img{
-                margin: 0 auto;
-                margin-top: 25px;
-            }
-        }
 
-    }
+	h3 {
+		margin-top: 1.875rem;
+		margin-left: 1.875rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
 
-    @media screen and (max-width: 1199px) {
-    
-        h3{
-            margin-top: 0;
-        }
-    }
+	p {
+		font-size: 16px;
+		line-height: 1.3;
+		margin: 1.25rem 2rem 0.875rem 1.875rem;
 
-    @media screen and (max-width: 991px) {
-        p{
-            margin: 1.25rem 2rem 0.875rem 0;
-            text-align: center;
-        }
+		@media (min-width: 992px) {
+			font-size: 1.1rem;
+			line-height: 1.6;
+		}
+	}
 
-        h3{
-            margin-top: 1.875rem;
-            margin-left: 0;
-            text-align: center;
-        }
-        .responsibility{
-            p{
-                text-align: center;
-            }
-            h3{
-                text-align: center;
-            }
-        }
-    }
+	img {
+		margin: 0 auto;
+	}
+
+	.responsibility {
+		p {
+			text-align: right;
+		}
+
+		h3 {
+			text-align: right;
+			margin-right: 1.875rem;
+		}
+	}
+
+	.alarming-facts {
+		padding: 20px 0 0 0;
+
+		@media (min-width: 992px) {
+			padding: 70px 0 0 0;
+		}
+
+		.bg-grey {
+			background-color: #f2f2f2;
+
+			h2 {
+				margin: 3rem auto 3rem auto;
+				line-height: 1.6;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+
+			}
+		}
+
+		&__img {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: auto;
+
+			img {
+				margin: 0 auto;
+				margin-top: 25px;
+			}
+		}
+
+	}
+
+	@media screen and (max-width: 1199px) {
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		p {
+			//margin: 1.25rem 2rem 0.875rem 0;
+			text-align: center;
+		}
+
+		h3 {
+			margin-top: 1.875rem;
+			margin-left: 0;
+			text-align: center;
+			margin-right: 0;
+		}
+		.responsibility {
+			p {
+				text-align: center;
+			}
+
+			h3 {
+				text-align: center;
+				margin-right: 0;
+			}
+		}
+	}
 }

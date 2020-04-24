@@ -1,147 +1,141 @@
-.instagram-feed{
-    padding-top: 90px;
+.instagram-feed {
+	padding-top: 90px;
 
-    span{
-        font-weight: bold;
-    }
+	span {
+		font-weight: bold;
+	}
 
-     hr{
-        border-top: 1px solid rgba(0,0,0,1);
-     }
+	hr {
+		border-top: 1px solid rgba(0, 0, 0, 1);
+	}
 
-     h5{
-        text-align: center;
-        margin: 20px 0 20px 0;
-        font-weight: bold;
-     }
+	h5 {
+		text-align: center;
+		margin: 20px 0 20px 0;
+		font-weight: bold;
+	}
 
-    .instagram-slider{
-        &__img{
-            width: 100%;
-            margin: 0 auto;
-            a {
-                outline: none;
-                img {
-                    margin: 0 auto;
-                }
-            }
+	.instagram-slider {
+		&__img {
+			width: 100%;
+			margin: 0 auto;
 
-            .slick-list {
-                margin: 0 auto;
-                max-width: 100%;
-            }
+			a {
+				outline: none;
 
-            .slick-arrow {
-                z-index: 2;
-                position: absolute;
-                display: block;
-                height: 40px;
-                width: 40px;
-                line-height: 0;
-                font-size: 0;
-                cursor: pointer;
-                background-color: grey;
-                opacity: 0.75;
-                // background: transparent;
-                border-radius: 100%;
-                color: transparent;
-                top: 50%;
-                transform: translate(0, -50%);
-                padding: 0;
-                border: none;
-                outline: none;
+				img {
+					margin: 0 auto;
+				}
+			}
 
-                &:before {
-                    font-size: 55px;
-                    color: white;
-                    opacity: 0.75;
-                    line-height: 0.2;
-                }
-            }
+			.slick-list {
+				margin: 0 auto;
+				max-width: 100%;
+			}
 
-            .slick-prev {
-                left: 0;
+			.slick-arrow {
+				z-index: 2;
+				position: absolute;
+				display: block;
+				height: 40px;
+				width: 40px;
+				line-height: 0;
+				font-size: 0;
+				cursor: pointer;
+				background-color: grey;
+				opacity: 0.75;
+				// background: transparent;
+				border-radius: 100%;
+				color: transparent;
+				top: 50%;
+				transform: translate(0, -50%);
+				padding: 0;
+				border: none;
+				outline: none;
 
-                &:before {
-                    content: "\02039";
-                }
-            }
+				&:before {
+					font-size: 55px;
+					color: white;
+					opacity: 0.75;
+					line-height: 0.2;
+				}
+			}
 
-            .slick-next {
-                right: 0;
+			.slick-prev {
+				left: 0;
 
-                &:before {
-                    content: "\0203A";
-                }
-            }
-            .blog-dots {
-                position: absolute;
-                bottom: -45px;
-                display: block;
-                width: 100%;
-                padding: 0;
-                list-style: none;
-                text-align: center;
-              }
-              
-            .blog-dots li {
-            position: relative;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin: 0 5px;
-            padding: 0;
-            cursor: pointer;
-            }
-            
-            .blog-dots li button {
-            font-size: 0;
-            line-height: 0;
-            display: block;
-            width: 20px;
-            height: 20px;
-            padding: 5px;
-            cursor: pointer;
-            color: transparent;
-            border: 0;
-            outline: none;
-            background: transparent;
-            }
-            
-            .blog-dots li button:hover,
-            .blog-dots li button:focus {
-            outline: none;
-            }
-            
-            .blog-dots li button:hover:before,
-            .blog-dots li button:focus:before {
-            opacity: 1;
-            }
-            
-            .blog-dots li button:before {
-            font-family: 'slick';
-            font-size: 22px;
-            line-height: 20px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            content: '•';
-            text-align: center;
-            opacity: .75;
-            color: grey;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-text-stroke: 1px grey;
-            text-shadow: 1px 1px 0 grey, 
-            -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
-            }
+				&:before {
+					content: "\02039";
+				}
+			}
 
-            .blog-dots li.slick-active button:before {
-            opacity: .75;
-            color: #007bff;
-            }
-        }
-    }
+			.slick-next {
+				right: 0;
+
+				&:before {
+					content: "\0203A";
+				}
+			}
+
+			.blog-dots {
+				position: absolute;
+				bottom: -45px;
+				display: block;
+				width: 100%;
+				padding: 0;
+				list-style: none;
+				text-align: center;
+			}
+
+			.blog-dots li {
+				position: relative;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin: 0 5px;
+				padding: 0;
+				cursor: pointer;
+			}
+
+			.blog-dots li button {
+				font-size: 0;
+				line-height: 0;
+				display: block;
+				width: 20px;
+				height: 20px;
+				padding: 5px;
+				cursor: pointer;
+				color: transparent;
+				border: 0;
+				outline: none;
+				background: transparent;
+			}
+
+			.blog-dots li button:hover,
+			.blog-dots li button:focus {
+				outline: none;
+			}
+
+			.blog-dots li button:hover:before,
+			.blog-dots li button:focus:before {
+				opacity: 1;
+			}
+
+			.blog-dots li button:before {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 10px;
+				height: 10px;
+				content: '';
+				background-color: #797979;
+				border-radius: 50%;
+			}
+
+			.blog-dots li.slick-active button:before {
+				background-color: #007bff;
+			}
+		}
+	}
 }

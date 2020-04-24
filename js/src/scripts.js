@@ -1,48 +1,60 @@
-jQuery(document).ready(function() {
-
-
-
+jQuery(document).ready(function () {
   'use strict';
 
-
-
   product_thumbnails_slider.init();
-
   blog_thumbnails_slider.init();
 
   // modal collaboration
-  $('[data-modal=projects-description]').on('click', function() {
+  /*$('[data-modal=projects-description]').on('click', function () {
     $('.overlay-collaboration, .popup-collaboration').fadeIn();
+  });*/
+
+  $('[data-modal]').each(function () {
+
+    $(this).on('click', function (e) {
+      e.preventDefault();
+
+      var $this = $(this),
+        $dataMadel = $this.data('modal');
+
+      $('[data-modal-popup=' + $dataMadel + ']').fadeIn();
+      $('body').addClass('body-overflow-hidden');
+    })
   });
 
-  $('.popup-collaboration__close').on('click', function() {
-    $('.overlay-collaboration, .popup-collaboration').fadeOut();
+  $('.popup-collaboration__close').on('click', function () {
+    $('.overlay-collaboration').fadeOut();
+    $('body').removeClass('body-overflow-hidden');
   });
 
+
+  /* ------------ Deleting placeholder focus ------------ */
+  var inputPlaceholder = $('input, textarea');
+  inputPlaceholder.on('focus', function () {
+    $(this).data('placeholder', $(this).attr('placeholder'));
+    $(this).attr('placeholder', '')
+  });
+
+  inputPlaceholder.on('blur', function () {
+    $(this).attr('placeholder', $(this).data('placeholder'))
+  });
+  /* ---------- End Deleting placeholder focus ---------- */
 });
-
 
 
 var product_thumbnails_slider = {
 
-
-
-  hover: function() {
-
-
+  hover: function () {
 
     var product = jQuery('.product');
 
-
-
-    product.each(function() {
+    product.each(function () {
 
       var productImage = jQuery(this).find('.product__image');
 
       var productImageHeight = productImage.height();
 
       productImage.css('height', productImageHeight);
-
 
 
       var img = productImage.find('img');
@@ -54,99 +66,63 @@ var product_thumbnails_slider = {
       var hoverSrc = img.attr('data-hover-src');
 
 
-
       productImage.hover(
+        function () {
 
-          function() {
+          img.attr('src', hoverSrc);
 
-            img.attr('src', hoverSrc);
+        },
 
-          },
+        function () {
 
-          function() {
+          img.attr('src', originalSrc);
 
-            img.attr('src', originalSrc);
-
-          });
-
+        });
 
 
       productThumbmail.hover(
+        function () {
 
-          function() {
+          var hoverSrc = jQuery(this).attr('src');
 
-            var hoverSrc = jQuery(this).attr('src');
+          img.attr('src', hoverSrc);
 
-            img.attr('src', hoverSrc);
+        },
 
-          },
+        function () {
 
-          function() {
+          img.attr('src', originalSrc);
 
-            img.attr('src', originalSrc);
-
-          });
-
-
+        });
 
     });
 
-
-
   },
 
-
-
-  slick: function() {
-
-
+  slick: function () {
 
     jQuery('.product__thumbnails').slick({
-
       infinite: true,
-
       slidesToShow: 3,
-
       slidesToScroll: 1,
-
     });
-
 
   },
 
-  
-
-
-  init: function() {
-
-
+  init: function () {
 
     var self = this;
-
-
 
     self.slick();
 
     self.hover();
 
-
-
   },
-
-
 
 };
 
 var blog_thumbnails_slider = {
-
-
-
-  
-
-
-
-  slick: function() {
-
+  slick: function () {
 
 
     jQuery('.instagram-slider__img').slick({
@@ -180,7 +156,7 @@ var blog_thumbnails_slider = {
           }
         },
         {
-        breakpoint: 720,
+          breakpoint: 720,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -209,24 +185,14 @@ var blog_thumbnails_slider = {
 
 
   },
-
-  
-
-
-  init: function() {
-
+  init: function () {
 
 
     var self = this;
 
 
-
     self.slick();
 
 
-
   },
-
-
-
 };

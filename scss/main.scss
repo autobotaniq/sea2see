@@ -1,7 +1,7 @@
-@import "../../node_modules/normalize.css/normalize";
+@import "./../node_modules/normalize.css/normalize";
 
 @import "components/variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./../node_modules/bootstrap/scss/bootstrap";
 
 @import "libs/slick";
 
@@ -32,6 +32,7 @@
 @import "components/press";
 @import "components/about-us";
 @import "components/shop-page";
+@import "components/chechout";
 a {
     &:hover {
         text-decoration: none;
@@ -66,4 +67,8 @@ a {
         left: calc(50% - 35px);
         background: #000;
     }
+}
+
+.body-overflow-hidden {
+	overflow: hidden;
 }

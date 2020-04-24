@@ -1,135 +1,182 @@
 .overlay {
-    // display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(0,0,0, .56);
-    
+	// display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(0, 0, 0, .56);
+	z-index: 999;
 }
 
-.popup{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-   
-    &__subtitle{
-        text-align: center;
-        h2{
-            margin-bottom: 0;
-            font-size: 28px;
-            font-weight: bold;
-            margin-top: 30px;
-        }
-    }
+.popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
 
-    &__close {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 41px;
-        line-height: 21px;
-        color: #cbcbcb;
-        cursor: pointer;
-    }
-    
-    &__content{
-        width: 650px;
-        height: auto;
-        padding: 20px 20px 20px 20px;
-        .feed-form{
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-width: 350px;
-            input{
-                height: 50px;
-                background-color: white;
-                margin-bottom: 15px;
-                padding: 0 20px 0 70px;
-                outline: none;
-                border: none;
-                border: solid 1px #161616;
-                border-radius: 2px;
-                
-            }
-            .facebook{
-                background: url('../img/icons/facebook-circular-logo.png') no-repeat left 30px center;
-                background-color: white;
-                border: solid 1.5px #1877f2;
-                color: #1877f2;
-                &::placeholder{
-                    color: #1877f2;
-                    font-size: 16px;
-                }
-            }
-            .gplus{
-                background: url('../img/icons/google.png') no-repeat left 30px center;
-                background-color: white;
-                border: none;
-                -webkit-box-shadow: 0px 0px 13px -2px rgba(145,143,145,1);
-                -moz-box-shadow: 0px 0px 13px -2px rgba(145,143,145,1);
-                box-shadow: 0px 0px 13px -2px rgba(145,143,145,1);
-                &::placeholder{
-                    color: black;
-                    font-size: 16px;
-                }
+	&__subtitle {
+		text-align: center;
 
-            }
-            .amazon{
-                background: url('../img/icons/amazon.png') no-repeat left 30px center;
-                background-color: #ffa100;
-                color: white;
-                border: none;
-                &::placeholder{
-                    color: white;
-                    font-size: 16px;
-                }
+		h2 {
+			margin-bottom: 0;
+			font-size: 28px;
+			font-weight: bold;
+			margin-top: 30px;
+		}
+	}
 
+	&__close {
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+		border: 0;
+		overflow: 0;
+		background-color: transparent;
+		transform-origin: center;
+		transition: all .3s;
 
-            }
-            button{
-                width: 100px;
-                height: 50px;
-                margin-left: auto;
-                border: none;
-                border-radius: 2px;
-                background-color: #9fa4a5;
-                color: white;
-                font-weight: bold;
-                font-size: 18px;
-            }
-            
-        }
-    }
-    hr{
-        margin: 0;
-    }
-    &__footer{
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 20px 10px 20px;
-        color: #9fa4a5;
-        a{
-            color: #9fa4a5;
-            font-size: 18px;
-        }
-        p{
-            margin-bottom: 5px;
-        }
-    }
-    @media screen and (max-width: 649px) {
-        .popup{
-            &__content{
-                width: auto;
-            }
-        }
-        &__footer{
-            flex-direction: column;
-        }
-    }
+		&:hover {
+			transform: rotate(-90deg);
+		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform-origin: center;
+			width: calc(100% + 5px);
+			height: 3px;
+			background-color: #cbcbcb;
+		}
+
+		&:before {
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+
+		&:after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+	}
+
+	&__content {
+		width: 650px;
+		height: auto;
+		padding: 20px 20px 20px 20px;
+
+		.feed-form {
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 350px;
+
+			input {
+				height: 50px;
+				background-color: white;
+				margin-bottom: 15px;
+				padding: 0 20px 0 40px;
+				outline: none;
+				border: solid 1px #161616;
+				border-radius: 2px;
+
+				&::placeholder {
+					color: #b1b1b1;
+				}
+			}
+
+			.facebook {
+				background: url('../img/icons/facebook-circular-logo.png') no-repeat left 30px center;
+				background-color: white;
+				border: solid 1.5px #1877f2;
+				color: #1877f2;
+				padding: 0 20px 0 80px;
+
+				&::placeholder {
+					color: #1877f2;
+					font-size: 16px;
+				}
+			}
+
+			.gplus {
+				background: url('../img/icons/google.png') no-repeat left 30px center;
+				background-color: white;
+				border: none;
+				box-shadow: 0 0 13px -2px rgba(145, 143, 145, 1);
+				padding: 0 20px 0 80px;
+
+				&::placeholder {
+					color: black;
+					font-size: 16px;
+				}
+			}
+
+			.amazon {
+				background: url('../img/icons/amazon.png') no-repeat left 30px center;
+				background-color: #ffa100;
+				color: white;
+				border: none;
+				padding: 0 20px 0 80px;
+
+				&::placeholder {
+					color: white;
+					font-size: 16px;
+				}
+			}
+
+			button {
+				width: 100px;
+				height: 50px;
+				margin-left: auto;
+				border: none;
+				border-radius: 2px;
+				background-color: #9fa4a5;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: all .3s;
+
+				&:hover {
+					background-color: #1877f2;
+				}
+			}
+		}
+	}
+
+	hr {
+		margin: 0;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 20px 10px 20px;
+		color: #9fa4a5;
+
+		a {
+			color: #9fa4a5;
+			font-size: 18px;
+		}
+
+		p {
+			margin-bottom: 5px;
+		}
+	}
+
+	@media screen and (max-width: 649px) {
+		.popup {
+			&__content {
+				width: auto;
+			}
+		}
+		&__footer {
+			flex-direction: column;
+		}
+	}
 }
 
