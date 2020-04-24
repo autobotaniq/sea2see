@@ -569,36 +569,6 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>var sliders = {
-          1: {slider : '#slider_1', nav: '#slider_nav_1'},
-          2: {slider : '#slider_2', nav: '#slider_nav_2'},
-          3: {slider : '#slider_3', nav: '#slider_nav_3'},
-          4: {slider : '#slider_4', nav: '#slider_nav_4'},
-          5: {slider : '#slider_5', nav: '#slider_nav_5'},
-          6: {slider : '#slider_6', nav: '#slider_nav_6'}
-        };
-
-        $.each(sliders, function() {
-
-          $(this.slider).slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true, 
-            centerMode: true,
-            asNavFor: this.nav
-          });
-          $(this.nav).slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: this.slider,
-            arrows: true,
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true
-          });
-
-        });</script>
     <script src="js/script.js"></script>
     
 </body>
