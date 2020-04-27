@@ -1,0 +1,34 @@
+.body-of-search {
+  form {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    margin: 0 auto;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    input {
+      height: 100%;
+      padding: 10px;
+      flex: 1;
+      max-width: 500px;
+    }
+    input[type="search"] {
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+    }
+    input[type="submit"] {
+      width: 40px !important;
+      flex: none;
+      background: #9fa4a5;
+      border: none;
+      border-radius: 0 4px 4px 0;
+    }
+    i {
+      right: 13px;
+      position: absolute;
+      top: 10px;
+      color: #fff;
+    }
+  }
+}
