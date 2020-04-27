@@ -29,11 +29,13 @@
 				padding: 0;
 				margin: 0;
 				li {
-					flex-wrap: wrap;
+					display: grid;
+					grid-template-columns: 0.8fr 1fr 1fr;
+					max-width: 525px;
+					grid-gap: 10px;
+					align-items: baseline;
 					list-style: none;
 					min-height: 60px;
-				    display: flex;
-				    align-items: baseline;
 				    letter-spacing: 0.5px;
 				    span {
 				    	margin-right: 2%;
